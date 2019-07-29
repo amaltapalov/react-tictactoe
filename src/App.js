@@ -35,7 +35,7 @@ class Board extends React.Component {
 
 	handleClick = i => {
 		const squares = this.state.squares.slice();
-		// stops game when someone won
+		// stops game when someone won - return exits out of the handleClick function
 		if (calculateWinner(squares) || squares[i]) {
 			return;
 		}
